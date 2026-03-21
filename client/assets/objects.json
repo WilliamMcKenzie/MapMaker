@@ -1,0 +1,8 @@
+[
+    { "id": "stone", "path": "objects/stone.png", "scale": 0.8 },
+    { "id": "boulder", "path": "objects/stone.png", "scale": 1.4 },
+    { "id": "shrub", "path": "objects/shrub.png", "scale": 1.2 },
+    { "id": "small_shrub", "path": "objects/small_shrub.png", "scale": 0.8 },
+    { "id": "cacti", "path": "objects/cacti.png", "scale": 1 },
+    { "id": "mushroom", "path": "objects/mushroom.png", "scale": 0.5 }
+]
