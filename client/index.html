@@ -178,16 +178,7 @@
         </table>
         <div class="buttons">
             <button onclick="makemap(1)">
-                Map 1
-            </button>
-            <button onclick="makemap(2)">
-                Map 2
-            </button>
-            <button onclick="makemap(3)">
-                Map 3
-            </button>
-            <button onclick="makemap(4)">
-                Map 4
+                Generate terrain
             </button>
             <button onclick="makemap(0)">
                 Reset
@@ -219,7 +210,7 @@
 
             async function makemap(which) {
                 if (which) {
-                    let map = await (await fetch(`http://127.0.0.1:7778/get_map_${which}`)).json()
+                    let map = await (await fetch(`http://127.0.0.1:7778/get_map`)).json()
                     populate_map(map)
                 }
                 else {

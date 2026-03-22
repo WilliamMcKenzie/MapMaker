@@ -11,6 +11,38 @@ async function init_objects() {
         textures[data.id] = await load_asset(data.path)
         object_data[data.id] = data
     }
+
+    // const head = await PIXI.Assets.load('/assets/objects/head.png')
+    // const body = await PIXI.Assets.load('/assets/objects/body.png')
+    // const weapon = await PIXI.Assets.load('/assets/objects/weapon.png')
+
+    // for (let texture of [head,body,weapon]) {
+    //     texture.source.scaleMode = "nearest"
+    //     texture.source.addressMode = "repeat"
+    // }
+
+    // const headsprite = create_sprite(head, -3.5,-2)
+    // const bodysprite = create_sprite(body, -5.5,0)
+    // const weaponsprite = create_sprite(weapon, 5,-6)
+    // // weaponsprite.angle = 23.5
+    // weaponsprite.scale = 1
+    // const container = new PIXI.Container()
+
+    // container.addChild(weaponsprite)
+    // container.addChild(bodysprite)
+    // container.addChild(headsprite)
+    // app.stage.addChild(container)
+    // object_layer.attach(container)
+    // object_layer.sortRenderLayerChildren()
+
+    // window.addEventListener("keydown", (e) => {
+    //     if (e.key == "q") {
+    //         container.angle -= 10
+    //     }
+    //     if (e.key == "e") {
+    //         container.angle += 10
+    //     }
+    // })
 }
 
 function create_sprite(texture, x, y) {
